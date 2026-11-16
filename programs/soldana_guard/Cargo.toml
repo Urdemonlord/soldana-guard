@@ -1,0 +1,21 @@
+[package]
+name = "soldana-guard"
+version = "0.1.0"
+description = "SolDana Guard: opt-in on-chain transaction guard for Solana (Dev3pack Global Hackathon 2026)"
+edition = "2021"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "soldana_guard"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.1"
+anchor-spl = "0.30.1"

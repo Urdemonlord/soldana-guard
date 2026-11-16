@@ -1,0 +1,15 @@
+# Rust / Anchor build outputs
+/target
+**/target/
+.anchor
+
+# Program keypairs: upgrade authority. NEVER commit.
+program-keypair.json
+mock-dex-keypair.json
+target/deploy/*-keypair.json
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
